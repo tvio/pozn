@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <app-pozn v-for="(pozn,index) in poznamky" @click.native="smazatPozn" :key="index">
+        <app-pozn v-for="(pozn,index) in poznamky" @click.native="smazatPozn(index)" :key="index">
             {{pozn}}
         </app-pozn>
         </div>
